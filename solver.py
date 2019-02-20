@@ -1,6 +1,6 @@
 import json, sys, string
 
-with open('boggle.json') as f:
+with open(sys.argv[1]) as f:
     game = json.load(f)
 
 words = game['dictionary']
